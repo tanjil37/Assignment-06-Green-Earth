@@ -31,7 +31,7 @@
     <!-- Css Link  -->
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body>
+  <body class="font-inter">
     <header class="bg-[#15803D]">
       <!-- navbar start -->
       <div class="navbar shadow-sm w-11/12 mx-auto">
@@ -57,9 +57,9 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-               <li><a href="">About</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Plant a Tree</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Plant a Tree</a></li>
             </ul>
           </div>
           <a class="text-xl text-white">Green Earth</a>
@@ -69,14 +69,82 @@
             <li><a href="">About</a></li>
             <li><a href="">Gallery</a></li>
             <li><a href="">Plant a Tree</a></li>
-            
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn bg-yellow-500 rounded-full">Plant a Tree</a>
+          <a class="px-3 py-2 bg-yellow-500 text-xs text-green-700 rounded-full"
+            >Plant a Tree</a
+          >
         </div>
       </div>
     </header>
+
+    <main>
+      <!-- Hero Secontion start  -->
+      <section class="bg-sky-100 relative">
+        <!-- Left BG -->
+        <div
+          class="absolute left-0 top-0 h-full w-1/2 bg-[url('./assets/hero-leaf1.png')] bg-no-repeat bg-left bg-contain"
+        ></div>
+
+        <!-- Right BG -->
+        <div
+          class="absolute right-0 top-0 h-full w-1/2 bg-[url('./assets/hero-leaf2.png')] bg-no-repeat bg-right bg-contain"
+        ></div>
+
+        <!-- Content -->
+        <div class="text-center space-y-5 py-24">
+          <h1 class="text-[#1F2937] font-bold text-4xl">
+            Plant a Tree, Grow a Future
+          </h1>
+          <p class="text-sm">
+            Join our mission to plant 1 million trees and make the Earth greener
+            for future <br />
+            generations.
+          </p>
+          <button
+            class="px-3 py-2 bg-yellow-500 text-xs text-green-700 rounded-full"
+          >
+            Get Involved
+          </button>
+        </div>
+      </section>
+
+      <!-- choose Your Tree -->
+      <section class="bg-sky-50">
+        <div class="w-11/12 mx-auto text-center pt-20">
+          <h2 class="text-2xl font-semibold">choose Your Tree</h2>
+          <!-- content -->
+          <div></div>
+        </div>
+      </section>
+
+      <!-- our impact Section  -->
+      <section class="bg-sky-100">
+        <div class="w-11/12 mx-auto text-center py-16">
+          <h2 class="text-2xl font-semibold">Our Impact</h2>
+          <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+            <div class="bg-white py-10 space-y-3 rounded-xl">
+              <h2 class="text-2xl text-green-700 font-semibold">500K+</h2>
+              <p>Tree Planted</p>
+            </div>
+            <div class="bg-white py-10 space-y-3 rounded-xl">
+              <h2 class="text-2xl text-green-700 font-semibold">120+</h2>
+              <p>Communities Involved</p>
+            </div>
+            <div class="bg-white py-10 space-y-3 rounded-xl">
+              <h2 class="text-2xl text-green-700 font-semibold">30+</h2>
+              <p>Countries Reached</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- plat a tree section  -->
+    </main>
+    <footer></footer>
 
     <script src="js/index.js"></script>
   </body>
