@@ -81,7 +81,7 @@
 
     <main>
       <!-- Hero Secontion start  -->
-      <section class="bg-sky-100 relative">
+      <section class="bg-[#CFF0DC] relative">
         <!-- Left BG -->
         <div
           class="absolute left-0 top-0 h-full w-1/2 bg-[url('./assets/hero-leaf1.png')] bg-no-repeat bg-left bg-contain"
@@ -112,15 +112,60 @@
 
       <!-- choose Your Tree -->
       <section class="bg-sky-50">
-        <div class="w-11/12 mx-auto text-center pt-20">
-          <h2 class="text-2xl font-semibold">choose Your Tree</h2>
+        <div class="w-11/12 mx-auto pt-20 border-red-600 border-2">
+          <h2 class="text-2xl font-semibold mb-10 text-center">
+            choose Your Tree
+          </h2>
+
+          <!-- Content -->
+          <div class="flex gap-6">
+            <!-- Catagory -->
+            <div class="bg-sky-50 h-screen w-1/6">
+              <h2 class="text-xl font-semibold text-black">Categories</h2>
+              <div id="categories-container" class="flex flex-col">
+                <!-- <button onclick="" class="btn btn-soft btn-success active">All Trees</button> -->
+              </div>
+            </div>
+
+            <!-- Plants Container-->
+            <div
+              id="plants-container"
+              class="w-4/6 grid grid-cols-1 lg:grid-cols-3 gap-5"
+            ></div>
+            <!-- Cart -->
+            <div class="bg-white h-screen w-1/6"></div>
+          </div>
+
           <!-- content -->
           <div></div>
         </div>
       </section>
 
+      <!-- Open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+      <dialog id="plant_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="details-container" class="">
+            
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <!-- About the Campaign -->
+      <!-- <section class="bg-sky-50">
+        <div class="w-4/6 bg-white h-screen mx-auto">
+
+        </div>
+
+       </section> -->
+
       <!-- our impact Section  -->
-      <section class="bg-sky-100">
+      <section class="bg-[#CFF0DC]">
         <div class="w-11/12 mx-auto text-center py-16">
           <h2 class="text-2xl font-semibold">Our Impact</h2>
           <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -181,7 +226,7 @@
       </section>
     </main>
     <footer class="bg-[#14532D] text-center">
-      <p class="text-white  py-4">© 2025 Green Earth. All Rights Reserved.</p>
+      <p class="text-white py-4">© 2025 Green Earth. All Rights Reserved.</p>
     </footer>
 
     <script src="js/index.js"></script>
