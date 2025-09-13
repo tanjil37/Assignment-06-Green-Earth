@@ -111,14 +111,14 @@
       </section>
 
       <!-- choose Your Tree -->
-      <section class="bg-sky-50">
-        <div class="w-11/12 mx-auto pt-20 ">
+      <section class="bg-sky-50 sm:text-center">
+        <div class="w-11/12 mx-auto pt-20">
           <h2 class="text-2xl font-semibold mb-10 text-center">
             choose Your Tree
           </h2>
 
           <!-- Content -->
-          <div class="flex gap-6">
+          <div class="flex gap-6 flex-col lg:flex-row">
             <!-- Catagory -->
             <div class="bg-sky-50 h-screen w-1/6">
               <h2 class="text-xl font-semibold text-black">Categories</h2>
@@ -127,6 +127,11 @@
               </div>
             </div>
 
+            <!-- Spiner -->
+
+            <div id="spinner" class="mx-auto hidden">
+              <span class="loading loading-dots loading-md"></span>
+            </div>
             <!-- Plants Container-->
             <div
               id="plants-container"
@@ -134,11 +139,9 @@
             ></div>
 
             <!--Add to Cart div-->
-            <div class="bg-white h-screen w-1/6 p-2 rounded-xl">
+            <div class="bg-white  w-1/6 p-2 rounded-xl">
               <h2 class="font-bold text-2xl">Your Cart</h2>
-
               <div id="add-cart-container"></div>
-
               <!-- Total border  div -->
               <div>
                 <div class="border-b-1 border-black"></div>
@@ -167,12 +170,32 @@
         </div>
       </dialog>
       <!-- About the Campaign -->
-      <!-- <section class="bg-sky-50">
-        <div class="w-4/6 bg-white h-screen mx-auto">
-
+      <section class="bg-sky-50 py-20">
+        <div class="w-4/6  mx-auto ">
+          <h2 class="text-2xl font-semibold text-center">About the Campaign</h2>
+          <!-- content  -->
+          <div class="flex mt-5 justify-between gap-5 items-center flex-col lg:flex-row">
+            <div class="w-full">
+              <img src="assets/about.png" alt="" />
+            </div>
+            <!-- text  -->
+            <div class="w-full ">
+              <p class="">
+                Green Earth is a global tree plantation initiative dedicated to
+                fighting climate change. Since our start, we’ve planted over
+                500,000 trees worldwide. By joining our campaign, you help
+                restore forests, create habitats for wildlife, and combat global
+                warming.
+              </p>
+              <ul class="list-disc pl-5 mt-4">
+                <li>Restoration of natural habitats</li>
+                <li>Improvement of air quality</li>
+                <li>Support for local communities</li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-       </section> -->
+      </section>
 
       <!-- our impact Section  -->
       <section class="bg-[#CFF0DC]">
